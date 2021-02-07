@@ -1,0 +1,6 @@
+Main Time, ShooterSpeed/Left, ShooterSpeed/Right, ShooterCurrent/Left, ShooterCurrent/Right
+1,4,7,8,9
+2,2,5,4,6
+3,8,7,9,6
+4,5,4,2,3
+5,9,7,5,6

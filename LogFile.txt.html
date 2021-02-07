@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BadLog - testfile.badbag</title>
+    <title>BadLog - LogFile.txt</title>
 
     <!-- bootstrap.min.css -->
     <style type="text/css">
@@ -571,27 +571,27 @@ b,f)})};C(!0,d.getOptions().exporting,{libURL:"https://code.highcharts.com/6.0.4
   <body>
     <div class="container">
       <div class="page-header">
-        <h1>testfile.badbag <a href="data:text/csv;base64,Um9vdCBUb3BpYyxGb2xkZXIvVG9waWMNCjEsNQ0KMiw0DQozLDMNCjIsMg0KMSwx" download="testfile.badbag.csv" class="btn btn-default btn-md">Download CSV</a></h1>
+        <h1>LogFile.txt <a href="data:text/csv;base64,TWFpbiBUaW1lLCBTaG9vdGVyU3BlZWQvTGVmdCwgU2hvb3RlclNwZWVkL1JpZ2h0LCBTaG9vdGVyQ3VycmVudC9MZWZ0LCBTaG9vdGVyQ3VycmVudC9SaWdodA0KMSw0LDcsOCw5DQoyLDIsNSw0LDYNCjMsOCw3LDksNg0KNCw1LDQsMiwzDQo1LDksNyw1LDY=" download="LogFile.txt.csv" class="btn btn-default btn-md">Download CSV</a></h1>
         
       </div>
 
-      <table class="table table-striped"><thead><tr><th>Name</th><th>Value</th></tr></thead><tbody><tr><td>Root Value</td><td>Sun, 30 Sep 2018 11:21:46 -0400</td></tr>
-</tbody></table>
+      <!-- Empty table omitted -->
+
 <!-- Log Table -->
 
 
-<div id="Root Topic" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div id="Main Time" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 <script>
-    Highcharts.chart('Root Topic', {
+    Highcharts.chart('Main Time', {
         chart: {
             type: 'line',
             zoomType: 'x'
         },
         title: {
-            text: 'Root Topic (ul)'
+            text: 'Main Time (ul)'
         },
         subtitle: {
-            text: 'Root Topic'
+            text: 'Main Time'
         },
         
         xAxis: {
@@ -606,8 +606,8 @@ b,f)})};C(!0,d.getOptions().exporting,{libURL:"https://code.highcharts.com/6.0.4
             enabled: false
         },
         series: [{
-                name: 'Root Topic',
-                data: [[0,1],[1,2],[2,3],[3,2],[4,1]]
+                name: 'Main Time',
+                data: [[0,1],[1,2],[2,3],[3,4],[4,5]]
             },]
     });
 </script>
@@ -616,32 +616,30 @@ b,f)})};C(!0,d.getOptions().exporting,{libURL:"https://code.highcharts.com/6.0.4
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" href="#collapse_30baa24967e08965d1594408031f0324ae11ccac">Folder</a>
+          <a data-toggle="collapse" href="#collapse_04e0efd8ccc7e2cc4af11cd2bc9de0aa3459c73e"> ShooterCurrent</a>
         </h4>
       </div>
-      <div id="collapse_30baa24967e08965d1594408031f0324ae11ccac" class="panel-collapse collapse">
+      <div id="collapse_04e0efd8ccc7e2cc4af11cd2bc9de0aa3459c73e" class="panel-collapse collapse">
         <div class="panel-body">
-          <table class="table table-striped"><thead><tr><th>Name</th><th>Value</th></tr></thead><tbody><tr><td>Value</td><td>Content</td></tr>
-</tbody></table>
+          <!-- Empty table omitted -->
+
           <!-- Log Table -->
 
           
-<div id="Folder/Topic" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div id=" ShooterCurrent/Left" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 <script>
-    Highcharts.chart('Folder/Topic', {
+    Highcharts.chart(' ShooterCurrent/Left', {
         chart: {
-            type: 'area',
+            type: 'line',
             zoomType: 'x'
         },
         title: {
-            text: 'Topic (s)'
+            text: 'Left (ul)'
         },
         subtitle: {
-            text: 'Folder/Topic'
+            text: ' ShooterCurrent/Left'
         },
-        yAxis: {
-                min: 0
-            },
+        
         xAxis: {
             events: {
                 setExtremes: syncExtremes
@@ -654,8 +652,122 @@ b,f)})};C(!0,d.getOptions().exporting,{libURL:"https://code.highcharts.com/6.0.4
             enabled: false
         },
         series: [{
-                name: 'Topic',
-                data: [[0,5],[1,4],[2,3],[3,2],[4,1]]
+                name: 'Left',
+                data: [[0,8],[1,4],[2,9],[3,2],[4,5]]
+            },]
+    });
+</script>
+
+<div id=" ShooterCurrent/Right" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script>
+    Highcharts.chart(' ShooterCurrent/Right', {
+        chart: {
+            type: 'line',
+            zoomType: 'x'
+        },
+        title: {
+            text: 'Right (ul)'
+        },
+        subtitle: {
+            text: ' ShooterCurrent/Right'
+        },
+        
+        xAxis: {
+            events: {
+                setExtremes: syncExtremes
+            },
+            title: {
+                text: 'Index'
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+                name: 'Right',
+                data: [[0,9],[1,6],[2,6],[3,3],[4,6]]
+            },]
+    });
+</script>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse_5d2af742dac4e9a988bb23481ec5a2791fdcf309"> ShooterSpeed</a>
+        </h4>
+      </div>
+      <div id="collapse_5d2af742dac4e9a988bb23481ec5a2791fdcf309" class="panel-collapse collapse">
+        <div class="panel-body">
+          <!-- Empty table omitted -->
+
+          <!-- Log Table -->
+
+          
+<div id=" ShooterSpeed/Left" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script>
+    Highcharts.chart(' ShooterSpeed/Left', {
+        chart: {
+            type: 'line',
+            zoomType: 'x'
+        },
+        title: {
+            text: 'Left (ul)'
+        },
+        subtitle: {
+            text: ' ShooterSpeed/Left'
+        },
+        
+        xAxis: {
+            events: {
+                setExtremes: syncExtremes
+            },
+            title: {
+                text: 'Index'
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+                name: 'Left',
+                data: [[0,4],[1,2],[2,8],[3,5],[4,9]]
+            },]
+    });
+</script>
+
+<div id=" ShooterSpeed/Right" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script>
+    Highcharts.chart(' ShooterSpeed/Right', {
+        chart: {
+            type: 'line',
+            zoomType: 'x'
+        },
+        title: {
+            text: 'Right (ul)'
+        },
+        subtitle: {
+            text: ' ShooterSpeed/Right'
+        },
+        
+        xAxis: {
+            events: {
+                setExtremes: syncExtremes
+            },
+            title: {
+                text: 'Index'
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+                name: 'Right',
+                data: [[0,7],[1,5],[2,7],[3,4],[4,7]]
             },]
     });
 </script>
@@ -667,7 +779,7 @@ b,f)})};C(!0,d.getOptions().exporting,{libURL:"https://code.highcharts.com/6.0.4
 
       <a style="color: grey; text-decoration: underline;" data-toggle="collapse" href="#metadata" aria-expanded="false" aria-controls="metadata">Info</a>
       <div class="collapse" id="metadata">
-        <div class="well">{"topics":[{"unit":"ul","name":"Root Topic","attrs":[]},{"unit":"s","name":"Folder/Topic","attrs":["area","zero"]}],"values":[{"name":"Root Value","value":"Sun, 30 Sep 2018 11:21:46 -0400"},{"name":"Folder/Value","value":"Content"}]}</div>
+        
         <p>badlogvis 0.3.4</p>
       </div>
     </div> <!-- /container -->
